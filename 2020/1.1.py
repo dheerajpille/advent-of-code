@@ -11,7 +11,7 @@ for i in range(len(numbers)):
 
     while l < r:
         if numbers[l]+numbers[r] == 2020-numbers[i]:
-            submit(str(numbers[l]*numbers[r]*numbers[i]), part="b", day=1, year=2020)
+            submit(numbers[l]*numbers[r]*numbers[i], part="b", day=1, year=2020)
             l += 1
             r -= 1
         elif numbers[l]+numbers[r] < 2020-numbers[i]:
